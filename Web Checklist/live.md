@@ -7,4 +7,4 @@
   
 * Content Security Policy
   * frame-ancestors - prevent clickbaiting
-    * [https://www.owasp.org/index.php/Clickjacking]     
+    * https://www.owasp.org/index.php/Clickjacking
