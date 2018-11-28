@@ -9,7 +9,7 @@
 * A new service connection should be set up to allow a release to deploy to the relevant Azure service (ie app service)
 * This is done in Project settings > Pipelines > Service connections
 
-# Build
+## Build
 
 * A build needs to be set up, this will build the solution from your code repo
 * The build for the HPS project involved the following...
@@ -22,7 +22,7 @@
   * Publish Build Artifact (not sure if required, the build arguments may do the same thing)
     * this is need to place the package created in the previous step into the correct location
 
-# Release
+## Release
 
 * Azure App Service Deploy - this was used to create the release/deploy
   * this was used to deploy to a dev deployment slot
