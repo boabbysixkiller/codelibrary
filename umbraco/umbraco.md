@@ -19,3 +19,6 @@ The following command would be run from the command prompt in the relevant Micro
 ### Republish the whole site
 * http://YOURDOMAIN/Umbraco/dialogs/republish.aspx?xml=true
 	* eg - https://travax-beta.scot.nhs.uk/umbraco/dialogs/republish.aspx?xml=true
+	
+### Useful Properties and Methods
+* Mode.Content.Site() - traverses up til it get to level 1, home node
