@@ -1,0 +1,26 @@
+<div class="push__ends soft__sides--half">
+    <div class="grid-wrap soft__top border__purple--top border--thick">
+        <h2 class="beta push__bottom">Events</h2>
+        <div class="grid-row push__bottom--double">
+            @{
+                if (eventsNode != null)
+                {
+                    foreach (var item in eventsNode.Children.OrderByDescending(n => n.GetPropertyValue<DateTime>("startDate")).Take(3))
+                    {
+                        <div class="grid-col grid-xsmall-12 grid-medium-6 grid-large-4 content-area soft__right">
+                            <a href="@item.Url">
+                                <section class="category-item">
+                                    <h1 class="category-item__title">@item.Name - @(item.GetPropertyValue<DateTime>("startDate").ToString("dd MMMM yyyy"))</h1>
+                                    <div class="category-item__summary">@(item.GetPropertyValue<string>("contentDescription"))</div>
+                                </section>
+                            </a>
+                        </div>
+                    }
+                }
+            }
+            <p>
+                <a href="/events" class="color-phs__blue" aria-label="View all events"><h1 class="category-item__title color-phs__blue"><i class="fa fa-list"></i> View all events</h1></a>
+            </p>
+        </div>
+    </div>
+</div>
