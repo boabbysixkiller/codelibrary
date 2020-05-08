@@ -9,4 +9,4 @@
     analyzer="Lucene.Net.Analysis.Standard.StandardAnalyzer, Lucene.Net" 
     enableDefaultEventHandler="true"/>`
     
-You need to use `supportUnpublished=true` on the indexer in ExamineSettings.config
+You need to use `supportProtected=true` on the indexer in ExamineSettings.config
